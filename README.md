@@ -8,11 +8,20 @@ This repository contains Python code supporting our research on automated classi
 ### Repository Structure
 The repository is organized into five directories, each corresponding to a specific aspect of our research:
 
-### Transformers on Cell Track Videos: Contains code for the transformer-based classification of single-cell morphodynamics videos.
-### Transformers and GRU on Patch Videos: Includes code for our hybrid models combining CNNs with either GRUs or Transformers for classifying neutrophil behavior in video patches.
-### CNN on Original Images: This directory hosts code for CNN-based classification using unprocessed original images from our dataset.
-### CNN on Preprocessed Images: Contains code for CNN models trained on images that underwent pre-processing steps such as Gaussian blur, CLAHE, and unsharp masking.
-### CNN on Preprocessed Patches: Features code for CNN models trained on patches extracted from pre-processed images, aiming to enhance dataset size and variability.
+### Transformers on Cell Track Videos: 
+Contains code for the transformer-based classification of single-cell morphodynamics videos.
+
+### Transformers and GRU on Patch Videos: 
+Includes code for our hybrid models combining CNNs with either GRUs or Transformers for classifying neutrophil behavior in video patches.
+
+### CNN on Original Images: 
+This directory hosts code for CNN-based classification using unprocessed original images from our dataset.
+
+### CNN on Preprocessed Images: 
+Contains code for CNN models trained on images that underwent pre-processing steps such as Gaussian blur, CLAHE, and unsharp masking.
+
+### CNN on Preprocessed Patches: 
+Features code for CNN models trained on patches extracted from pre-processed images, aiming to enhance dataset size and variability.
 
 ### Dataset Overview
 The dataset consists of 27 time-lapse microscopy videos, each providing 260 images (2048 x 2048 pixels) captured every 7 seconds over 30 minutes. These images were derived from blood samples of nine healthy donors, each subjected to three different infection scenarios for comprehensive analysis.
@@ -26,7 +35,7 @@ Our approach encompasses various deep learning techniques:
 Transformers and GRUs: We employed transformers and GRUs to analyze the temporal and spatial characteristics of neutrophils in video data.
 CNNs on Images: We explored the efficiency of CNNs in classifying neutrophil images and videos, comparing models trained on original, preprocessed, and patch-based images.
 
-#### Requirements
+### Requirements
 Python 3.x
 Libraries: OpenCV, scikit-image, TensorFlow, NumPy, patchify
 
