@@ -1,5 +1,27 @@
 # Deep learning-based characterization of neutrophil activation phenotypes in ex vivo human Candida blood infections
 
+### Research Group Applied Systems Biology
+
+**Contributions:** Arjun Sarkar, Carl-Magnus Svensson
+
+**Head:** Prof. Dr. Marc Thilo Figge
+
+**Department:** Applied Systems Biology  
+**Institute:** Leibniz Institute for Natural Product Research and Infection Biology (Hans Knöll Institute, HKI)
+
+**Address:**  
+Adolf-Reichwein-Straße 23  
+07745 Jena, Germany
+
+**Website:**  
+[Applied Systems Biology](https://www.leibniz-hki.de/en/applied-systems-biology.html)
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
+
 ### Abstract
 The early identification of human pathogens is crucial for the effective treatment of bloodstream infections to prevent sepsis. Since pathogens that are present in small numbers are usually difficult to detect directly, we hypothesize that the behavior of the immune cells that are present in large numbers may provide indirect evidence about the causative pathogen of the infection. We previously applied time-lapse microscopy to observe that neutrophils isolated from human whole-blood samples, which had been infected with the human-pathogenic fungus Candida albicans or C. glabrata, indeed exhibited a characteristic morphodynamic behavior. Tracking the neutrophil movement and shape dynamics over time combined with a white-box machine learning approach allowed us to distinguish the infected whole-blood samples from pathogen-free control samples with 100% accuracy. However, based on features like morphodynamics and intensity gradient of neutrophils, the accuracy for the differentiation between the two Candida species was significantly reduced to about 75%. In this study, the focus is on improving the classification accuracy of the Candida species using a black-box approach in terms of advanced deep learning methods. We implemented (i) gated recurrent unit (GRU) networks and transformer-based networks for video data, and (ii) convolutional neural networks (CNNs) for individual frames of the time-lapse microscopy data. While the GRU and transformer-based approaches yielded promising results with 96% and 100% accuracy, respectively, the classification based on videos proved to be very time-consuming and required several hours. In contrast, the CNN model for individual microscopy frames yielded results within minutes, and, utilizing a majority-vote technique, achieved 100% accuracy both in identifying the pathogen-free blood samples and in distinguishing between the Candida species. We conclude that the applied CNN demonstrates the potential for automatically differentiating bloodstream Candida infections from individual microscopy frames with high accuracy and efficiency. We further analysed the results of the trained CNN using explainable artificial intelligence (XAI) techniques to understand the critical features and patterns the network was focusing on, thereby shedding light on potential key morphodynamic characteristics of neutrophils in response to different Candida species. This approach could provide new insights into host-pathogen interactions and may facilitate the development of rapid, automated diagnostic tools for differentiating fungal species in blood samples, ultimately contributing to faster and more targeted therapeutic interventions.
 
